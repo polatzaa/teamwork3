@@ -1,0 +1,364 @@
+.sec6 {
+  background-color: black;
+  padding: 80px 60px;
+  color: white;
+}
+
+.sec6 > h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+
+.sec7, .sec8, .sec9, .sec10 {
+  background-color: #171616;
+  border: 2px solid #10b981;
+  border-radius: 16px;
+  padding: 40px 30px;
+  text-align: center;
+ 
+}
+
+
+
+
+.sec7 img, .sec8 img, .sec9 img, .sec10 img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.sec7 h1, .sec8 h1, .sec9 h1, .sec10 h1 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: white;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+
+.sec11, .sec12, .sec13, .sec14, .sec15 {
+  border-radius: 16px;
+  padding: 40px 25px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  min-height: 350px;
+}
+
+
+.sec11 {
+  background: linear-gradient(135deg, #1a1a1a 0%, #0d5a47 100%);
+}
+
+.sec12 {
+  background: linear-gradient(135deg, #1a1a1a 0%, #0d5a47 100%);
+}
+
+.sec13 {
+  background: linear-gradient(135deg, #1a1a1a 0%, #0d5a47 100%);
+}
+
+.sec14 {
+  background: linear-gradient(135deg, #1a1a1a 0%, #0d5a47 100%);
+}
+
+.sec15 {
+  background: linear-gradient(135deg, #1a1a1a 0%, #0d5a47 100%);
+}
+
+
+
+.sec11 img, .sec12 img, .sec13 img, .sec14 img, .sec15 img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+.sec11 h1, .sec12 h1, .sec13 h1, .sec14 h1, .sec15 h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.sec11 p, .sec12 p, .sec13 p, .sec14 p, .sec15 p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+}
+
+
+.sec6 {
+  display: grid;
+  grid-template-areas:
+    "title title title title"
+    "card1 card2 card3 card4"
+    "bottom bottom bottom bottom";
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.sec6 > h1 {
+  grid-area: title;
+}
+
+.header {
+  grid-area: bottom;
+}
+
+
+@media (max-width: 1440px) {
+  .sec6 {
+    padding: 70px 50px;
+  }
+
+  .sec6 > h1 {
+    font-size: 44px;
+  }
+
+  .sec11, .sec12, .sec13, .sec14, .sec15 {
+    padding: 35px 22px;
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .sec6 {
+    padding: 60px 40px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "title title"
+      "card1 card2"
+      "card3 card4"
+      "bottom bottom";
+  }
+
+  .sec6 > h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+
+  .header {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .sec7, .sec8, .sec9, .sec10 {
+    padding: 35px 25px;
+  }
+
+  .sec11, .sec12, .sec13, .sec14, .sec15 {
+    min-height: 300px;
+  }
+
+  .sec11 h1, .sec12 h1, .sec13 h1, .sec14 h1, .sec15 h1 {
+    font-size: 22px;
+  }
+
+  .sec11 p, .sec12 p, .sec13 p, .sec14 p, .sec15 p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .sec6 {
+    padding: 50px 30px;
+  }
+
+  .sec6 > h1 {
+    font-size: 36px;
+  }
+
+  .header {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sec7 img, .sec8 img, .sec9 img, .sec10 img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .sec11 img, .sec12 img, .sec13 img, .sec14 img, .sec15 img {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sec6 {
+    padding: 40px 20px;
+    grid-template-areas:
+      "title"
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "bottom";
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .sec6 > h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .header {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .sec7, .sec8, .sec9, .sec10 {
+    padding: 30px 20px;
+  }
+
+  .sec7 h1, .sec8 h1, .sec9 h1, .sec10 h1 {
+    font-size: 18px;
+  }
+
+  .sec7 img, .sec8 img, .sec9 img, .sec10 img {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 15px;
+  }
+
+  .sec11, .sec12, .sec13, .sec14, .sec15 {
+    min-height: auto;
+    padding: 30px 20px;
+  }
+
+  .sec11 h1, .sec12 h1, .sec13 h1, .sec14 h1, .sec15 h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .sec11 p, .sec12 p, .sec13 p, .sec14 p, .sec15 p {
+    font-size: 14px;
+  }
+
+  .sec11 img, .sec12 img, .sec13 img, .sec14 img, .sec15 img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sec6 {
+    padding: 35px 15px;
+  }
+
+  .sec6 > h1 {
+    font-size: 28px;
+    margin-bottom: 35px;
+  }
+
+  .sec7, .sec8, .sec9, .sec10 {
+    padding: 25px 15px;
+  }
+
+  .sec7 h1, .sec8 h1, .sec9 h1, .sec10 h1 {
+    font-size: 16px;
+  }
+
+  .sec11, .sec12, .sec13, .sec14, .sec15 {
+    padding: 25px 18px;
+  }
+
+  .sec11 h1, .sec12 h1, .sec13 h1, .sec14 h1, .sec15 h1 {
+    font-size: 18px;
+  }
+
+  .sec11 p, .sec12 p, .sec13 p, .sec14 p, .sec15 p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sec6 {
+    padding: 30px 12px;
+  }
+
+  .sec6 > h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .sec7, .sec8, .sec9, .sec10 {
+    padding: 20px 12px;
+  }
+
+  .sec7 h1, .sec8 h1, .sec9 h1, .sec10 h1 {
+    font-size: 15px;
+  }
+
+  .sec7 img, .sec8 img, .sec9 img, .sec10 img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .sec11, .sec12, .sec13, .sec14, .sec15 {
+    padding: 20px 15px;
+  }
+
+  .sec11 h1, .sec12 h1, .sec13 h1, .sec14 h1, .sec15 h1 {
+    font-size: 17px;
+  }
+
+  .sec11 p, .sec12 p, .sec13 p, .sec14 p, .sec15 p {
+    font-size: 12px;
+  }
+
+  .sec11 img, .sec12 img, .sec13 img, .sec14 img, .sec15 img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 18px;
+  }
+
+  .header {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .sec6 {
+    padding: 25px 10px;
+  }
+
+  .sec6 > h1 {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .sec7, .sec8, .sec9, .sec10 {
+    padding: 18px 10px;
+  }
+
+  .sec7 h1, .sec8 h1, .sec9 h1, .sec10 h1 {
+    font-size: 14px;
+  }
+
+  .sec11, .sec12, .sec13, .sec14, .sec15 {
+    padding: 18px 12px;
+  }
+
+  .sec11 h1, .sec12 h1, .sec13 h1, .sec14 h1, .sec15 h1 {
+    font-size: 16px;
+  }
+
+  .sec11 p, .sec12 p, .sec13 p, .sec14 p, .sec15 p {
+    font-size: 11px;
+  }
+}
