@@ -35,7 +35,7 @@ const Section3 = () => {
          <div className='sec10'>
              <img src={card} />
              <h1>Не нужен номер  <br />телефона<br />
-                и иностранная карта</h1>
+                и иностранная карта.</h1>
         </div>
             <div className='header'>
 
