@@ -1,0 +1,158 @@
+.pricing-container {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 100px 20px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  padding-top: 150px;
+}
+
+.pricing-main-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+
+.pricing-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Kartochka umumiy ko'rinishi */
+.pricing-card {
+  background-color: #242427;
+  border-radius: 16px;
+  padding: 100px 60px;
+  width: 420px;
+  text-align: left;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+/* O'rtadagi kartochka uchun maxsus border */
+.pricing-card.featured {
+  border: 1px solid #ffffff66;
+  background-color: #2a2a2e;
+}
+
+.badge {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  color: #10b981;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.card-title {
+  font-size: 2rem;
+  line-height: 1.3;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.feature-li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+/* Ikonkalar stili */
+.status-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.included .status-icon {
+  background-color: #10b981;
+  color: #ffffff;
+}
+
+.excluded .status-icon {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+.excluded {
+  color: #888888;
+}
+
+/* Tugmalar */
+.btn-primary {
+  width: 100%;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 18px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.btn-white {
+  width: 100%;
+  background-color: #ffffff;
+  color: #10b981;
+  border: none;
+  padding: 18px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.warning-note {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+  color: #cccccc;
+  font-size: 0.9rem;
+}
+
+.warning-icon {
+  color: #f59e0b;
+}
+
+/* Responsivlik */
+@media (max-width: 1200px) {
+  .pricing-card {
+    width: 340px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-main-title {
+    font-size: 2.5rem;
+  }
+  .pricing-card {
+    width: 100%;
+  }
+}

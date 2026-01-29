@@ -1,0 +1,130 @@
+.hero-container {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  min-height: 100vh; /* Balandroq qildim, butun ekranni egallaydi */
+  display: flex;
+  align-items: center;
+  padding: 80px 40px; /* Ichki bo'shliqlarni oshirdim */
+  font-family: 'Inter', sans-serif;
+}
+
+.hero-content {
+  max-width: 1400px; /* Konteynerni kengaytirdim */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr; /* Chap tomonga ko'proq joy berildi */
+  gap: 80px; /* Elementlar orasidagi masofa kattalashdi */
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 4.5rem; /* Sarlavha ancha kattalashdi */
+  font-weight: 800;
+  margin-bottom: 24px;
+  line-height: 1.1;
+  /* letter-spacing: -1px; */
+}
+
+
+.hero-subtitle {
+  font-size: 1.5rem; /* Subtitle o'lchami oshirildi */
+  color: #cccccc;
+  margin-bottom: 50px;
+  max-width: 600px; /* Matn kengroq yoyiladi */
+  line-height: 1.5;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Punktlar orasidagi masofa */
+  margin-bottom: 60px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.check-icon {
+  background: rgba(16, 185, 129, 0.2);
+  border: 1px solid rgba(16, 185, 129, 0.5);
+  border-radius: 50%;
+  padding: 8px; /* Ikonka atrofidagi aylana kattaroq */
+  color: #10b981;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.check-icon svg {
+  width: 24px; /* Ikonka o'zi ham kattaroq */
+  height: 24px;
+}
+
+.feature-info h3 {
+  font-size: 1.4rem; /* Punkt sarlavhasi */
+  margin: 0;
+  font-weight: 600;
+}
+
+.feature-info p {
+  color: #999999;
+  margin: 6px 0 0 0;
+  font-size: 1.1rem; /* Punkt tavsifi */
+}
+
+.docs-link {
+  color: #cccccc;
+  text-decoration: none;
+  border-bottom: 2px solid #555555;
+  padding-bottom: 6px;
+  font-size: 1.3rem; /* Havola matni kattaroq */
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.docs-link:hover {
+  color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+.main-illustration {
+  width: 100%;
+  max-width: 650px; /* Rasm o'lchami kattalashtirildi */
+  height: auto;
+  filter: drop-shadow(0 20px 50px rgba(0,0,0,0.5)); /* Rasmga hajm berish uchun soya */
+}
+.hero-image-side img{
+    width: 647px;
+    height: 616px;
+}
+
+/* --- Media Queries (Mobil versiya uchun moslashuvchanlik saqlandi) --- */
+@media (max-width: 1100px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 50px;
+  }
+
+  .hero-text-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-item {
+    text-align: left;
+  }
+
+  .hero-image-side {
+    order: -1;
+  }
+}
